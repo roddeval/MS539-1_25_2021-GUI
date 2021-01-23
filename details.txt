@@ -1,9 +1,11 @@
 NAME				DATE		PROJECT
 Roderick DeValcourt 1/22/2021	MS539 1_25_2021 GUI
 
+
+estimate: 4 hours of work in visual studio
 Start                   Stop
 1/22/2021  8:00 PM      1/22/2021 9:00 PM
-1/23/2021 11:00 AM      1/22/2021 1:00 PM
+1/23/2021 11:00 AM      1/23/2021 1:00 PM
 
 Program explanation
 design
@@ -21,11 +23,20 @@ validations
 architecture
     3 windows
     start of a full stack implementation
+
+Paragraph on coding it
+
+I initially estimated four (4) hours to complete this project assignment.  It
+took me three (3) hours total.  I think I estimated four (4) hours for manually
+working on the gui elements and manually working on the validation logic.  I
+normally generate this type of screen from an database table which would take less
+than two (2) hours.
     
 github
 https://github.com/roddeval/MS539-1_25_2021-GUI
 
 video
 https://youtu.be/ZoaOeZNx_GU
+
 
 paper
