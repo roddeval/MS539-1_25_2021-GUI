@@ -153,6 +153,20 @@ namespace MS539_1_25_2021_GUI.Logic
                         formInputsValidator.isAgeOK = false;
                         formInputsValidator.AgeExplanation = FormInputsValidator.ErrorAgeExplanation;
                     }
+
+
+                    if (age == 0)
+                    {
+                        if (formInputsValidator == null)
+                        {
+                            formInputsValidator = new FormInputsValidator();
+                        }
+                        formInputsValidator.isError = true;
+                        formInputsValidator.ErrorMessage += "Age has an error (cannot be 0).";
+                        formInputsValidator.isAgeOK = false;
+                        formInputsValidator.AgeExplanation = FormInputsValidator.ErrorAgeExplanation;
+                    }
+
                 }
                 else
                 {

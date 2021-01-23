@@ -59,7 +59,7 @@ namespace MS539_1_25_2021_GUI.Entities
             }
         }
 
-        public void Initialize()
+        public override void Initialize()
         {
 
             base.Initialize();

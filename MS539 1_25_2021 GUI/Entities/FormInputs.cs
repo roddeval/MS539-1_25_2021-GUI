@@ -32,7 +32,7 @@ namespace MS539_1_25_2021_GUI.Entities
             }
         }
 
-        public void Initialize()
+        public virtual void Initialize()
         {
             this.Name = string.Empty;
             this.DOB = string.Empty;
