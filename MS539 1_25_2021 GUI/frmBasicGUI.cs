@@ -87,6 +87,8 @@ namespace MS539_1_25_2021_GUI
                     stringBuilder.Append("**********\r\n");
                     oops = oops.InnerException;
                 }
+                message = stringBuilder.ToString();
+                lblError.Text = message;
             }
             return formInputs;
         }
@@ -137,6 +139,57 @@ namespace MS539_1_25_2021_GUI
             this.rbtnFemale.Checked = false;
             this.rbtnMale.Checked = false;
             this.txtAge.Text = "";
+        }
+
+        private void btnThrowError_Click(object sender, EventArgs e)
+        {
+            string message = "";
+            StringBuilder stringBuilder = null;
+            Exception oops = null;
+            ValidationLogic validationLogic = null;
+            FormInputs formInputs = null;
+            try
+            {
+                //formInputs = new FormInputs();
+                formInputs.Name = txtName.Text.Trim();
+                formInputs.DOB = dateTimePicker1.Value.ToString();
+
+                if (rbtnFemale.Checked == true)
+                {
+                    formInputs.Gender = "1";
+                }
+
+                if (rbtnMale.Checked == true)
+                {
+                    formInputs.Gender = "0";
+                }
+
+                formInputs.Age = txtAge.Text.Trim();
+                ProcessFormInputs(formInputs);
+
+            }
+            catch (Exception exception)
+            {
+                stringBuilder = new StringBuilder();
+                // walking the stack trace for all error information presented
+                oops = exception;
+                while (oops != null)
+                {
+                    message = oops.Message;
+                    stringBuilder.Append("Message: " + message + ".\r\n");
+
+                    message = oops.Source;
+                    stringBuilder.Append("\tSource: " + message + ".\r\n");
+
+                    message = oops.StackTrace;
+                    stringBuilder.Append("\tStackTrace: " + message + ".\r\n");
+                    stringBuilder.Append("**********\r\n");
+                    oops = oops.InnerException;
+                }
+                message = stringBuilder.ToString();
+                lblError.Text = message;
+            }
+
         }
     }
 }

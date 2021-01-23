@@ -47,6 +47,7 @@
             this.lblName = new System.Windows.Forms.Label();
             this.lblError = new System.Windows.Forms.Label();
             this.btnResetScreen = new System.Windows.Forms.Button();
+            this.btnThrowError = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.grpGender.SuspendLayout();
             this.SuspendLayout();
@@ -204,11 +205,22 @@
             this.btnResetScreen.UseVisualStyleBackColor = true;
             this.btnResetScreen.Click += new System.EventHandler(this.btnResetScreen_Click);
             // 
+            // btnThrowError
+            // 
+            this.btnThrowError.Location = new System.Drawing.Point(154, 42);
+            this.btnThrowError.Name = "btnThrowError";
+            this.btnThrowError.Size = new System.Drawing.Size(83, 23);
+            this.btnThrowError.TabIndex = 43;
+            this.btnThrowError.Text = "Throw Error";
+            this.btnThrowError.UseVisualStyleBackColor = true;
+            this.btnThrowError.Click += new System.EventHandler(this.btnThrowError_Click);
+            // 
             // frmBasicGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 461);
+            this.Controls.Add(this.btnThrowError);
             this.Controls.Add(this.btnResetScreen);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.grpGender);
@@ -257,5 +269,6 @@
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.Button btnResetScreen;
+        private System.Windows.Forms.Button btnThrowError;
     }
 }
