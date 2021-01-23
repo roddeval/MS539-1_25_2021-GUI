@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\FormInputs.cs" />
+    <Compile Include="Entities\FormInputsValidator.cs" />
     <Compile Include="frmBasicGUI.cs">
       <SubType>Form</SubType>
     </Compile>

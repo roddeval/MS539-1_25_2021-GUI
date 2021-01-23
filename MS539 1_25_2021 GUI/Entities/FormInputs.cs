@@ -7,12 +7,6 @@ using System.Threading.Tasks;
 namespace MS539_1_25_2021_GUI.Entities
 {
 
-    public enum GenderEnum
-    {
-        Male=0,
-        Female = 1
-    }
-
     public class FormInputs
     {
 
@@ -41,14 +35,14 @@ namespace MS539_1_25_2021_GUI.Entities
         public void Initialize()
         {
             this.Name = string.Empty;
-            this.DOB = DateTime.MinValue;
-            this.Gender = GenderEnum.Male;
-            this.Age = 0;
+            this.DOB = string.Empty;
+            this.Gender = string.Empty;
+            this.Age = string.Empty;
         }
 
         public string Name { set; get; }
-        public DateTime DOB { set; get; }
-        public GenderEnum Gender { set; get; }
-        public Int32 Age { set; get; }
+        public string DOB { set; get; }
+        public string Gender { set; get; }
+        public string Age { set; get; }
     }
 }

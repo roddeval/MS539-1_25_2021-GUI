@@ -13,8 +13,8 @@ NAME				DATE		PROJECT
 Roderick DeValcourt 1/22/2021	MS539 1_25_2021 GUI
 
 Start                   Stop
-1/22/2021 8:00 PM       1/22/2021 9:00 PM
-
+1/22/2021  8:00 PM      1/22/2021 9:00 PM
+1/23/2021 11:00 AM      1/22/2021 1:00 PM
  */
 
 namespace MS539_1_25_2021_GUI
@@ -28,7 +28,7 @@ namespace MS539_1_25_2021_GUI
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
         private void basicToolStripMenuItem_Click(object sender, EventArgs e)
