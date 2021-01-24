@@ -40,3 +40,5 @@ https://youtu.be/ZoaOeZNx_GU
 
 
 paper
+Assignment-GUI-exception-handling-and-parse-methods-paper.docx
+Assignment-GUI-exception-handling-and-parse-methods-paper.pdf
